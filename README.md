@@ -29,7 +29,6 @@ pip install -r requirements.txt
 ### 🏋️‍♂️ Train VQVAE（First Stage）
 
 
-```bash
 # Train the shortcut RVQVAE model
 python train.py -c configs/.yaml
 
