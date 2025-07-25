@@ -1,5 +1,4 @@
-SemGes: Semantics-aware Co-Speech Gesture Generation using Semantic Coherence and Relevance Learning[ICCV 2025]
-# GestureLSM: Latent Shortcut based Co-Speech Gesture Generation with Spatial-Temporal Modeling [ICCV 2025]
+# SemGes: Semantics-aware Co-Speech Gesture Generation using Semantic Coherence and Relevance Learning[ICCV 2025]
 
 ![webpage]( https://semgesture.github.io/.)
 ![arxiv]()
