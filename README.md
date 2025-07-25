@@ -6,7 +6,6 @@
 ## 🧾 Release Plans
 
 - [x] Inference Code  
-- [x] Pretrained Models  
 - [x] A web demo  
 - [x] Training Code  
 - [ ] Pretrained Models  
