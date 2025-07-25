@@ -35,6 +35,6 @@ python train.py -c configs/.yaml
 
 
 ### 🏋️‍♂️ Train SemGes（Second Stage）
-```bash
+
 # Train the diffusion model
 python train.py -c configs/.yaml
