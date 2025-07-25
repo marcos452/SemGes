@@ -25,5 +25,5 @@ conda activate semges
 # Step 2: Install Python dependencies
 pip install -r requirements.txt
 
-### First Stage Training
+
 
