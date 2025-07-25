@@ -17,4 +17,13 @@
 
 ### Build Environment
 
+```bash
+# Step 1: Create and activate conda environment
+conda create -n semges python=3.8
+conda activate semges
+
+# Step 2: Install Python dependencies
+pip install -r requirements.txt
+
+
 
