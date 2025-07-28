@@ -1,7 +1,7 @@
 # SemGes: Semantics-aware Co-Speech Gesture Generation using Semantic Coherence and Relevance Learning[ICCV 2025]
 
 [webpage]( https://semgesture.github.io/.)
-[arxiv]()
+[arxiv](https://www.arxiv.org/abs/2507.19359)
 
 ## 🧾 Release Plans
 
