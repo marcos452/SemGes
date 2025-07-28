@@ -27,14 +27,9 @@ pip install -r requirements.txt
 
 
 ### 🏋️‍♂️ Train VQVAE（First Stage）
-
-
-# Train the shortcut RVQVAE model
 python train.py -c configs/.yaml
 
 
 
 ### 🏋️‍♂️ Train SemGes（Second Stage）
-
-# Train the diffusion model
 python train.py -c configs/.yaml
