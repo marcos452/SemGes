@@ -27,7 +27,7 @@ pip install -r requirements.txt
 
 
 ### 🏋️‍♂️ Train VQVAE（First Stage）
-python train.py -c configs/.yaml
+python train.py -c configs/vqvae.yaml
 
 
 
