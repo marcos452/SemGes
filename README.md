@@ -1,17 +1,9 @@
 # SemGes: Semantics-aware Co-Speech Gesture Generation using Semantic Coherence and Relevance Learning[ICCV 2025]
-
-[webpage]( https://semgesture.github.io/.)
-[arxiv](https://www.arxiv.org/abs/2507.19359)
-
-## 🧾 Release Plans
-
-- [x] Inference Code  
-- [x] A web demo  
-- [x] Training Code  
-- [ ] Pretrained Models  
-
-
----
+> 
+> This GitHub repository contains PyTorch implementation of the work presented above. 
+> SemGes generates gesture animations based on raw audio input of speech sequences, text and speaker ID. 
+> We reccomend visiting the project [webpage]( https://semgesture.github.io/.)
+> Paper [arxiv](https://www.arxiv.org/abs/2507.19359) and watching the supplementary video.
 
 ## ⚙️ Installation
 
@@ -25,6 +17,8 @@ conda activate semges
 # Step 2: Install Python dependencies
 pip install -r requirements.txt
 
+
+## 🧾 Release Plans
 
 ### 🏋️‍♂️ Train VQVAE（First Stage）
 python train.py -c configs/vqvae_hand.yaml
