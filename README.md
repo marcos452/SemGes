@@ -3,7 +3,7 @@
 > This official GitHub repository contains PyTorch implementation of the work presented above. 
 > SemGes generates gesture animations based on raw audio input of speech sequences, text and speaker ID.
 
-> We reccomend visiting the project [webpage]( https://semgesture.github.io/.)and watching the supplementary video.
+> We reccomend visiting the project [webpage]( https://semgesture.github.io/.) and watching the supplementary video.
 
 > Paper [arxiv](https://www.arxiv.org/abs/2507.19359)
 
@@ -21,9 +21,9 @@ pip install -r requirements.txt
 ## 📁 Dataset Download
 
 
-### [BEAT Datasets](https://data.vision.ee.ethz.ch/cvl/datasets/b3dac2.en.html) is available upon request for research or academic purposes and Beat Data Preparation and Data Pre-process Please follow this [link](https://github.com/Doubiiu/CodeTalker/tree/main/BIWI)
+> [BEAT Datasets](https://data.vision.ee.ethz.ch/cvl/datasets/b3dac2.en.html) is available upon request for research or academic purposes and Beat Data Preparation and Data Pre-process Please follow this [link](https://github.com/Doubiiu/CodeTalker/tree/main/BIWI)
 
-### [TED Datasets](https://data.vision.ee.ethz.ch/cvl/datasets/b3dac2.en.html) is available upon request for research or academic purposes and TED Datasets Preparation and Data Pre-process Please follow this [link](https://github.com/Doubiiu/CodeTalker/tree/main/BIWI)
+> [TED Datasets](https://data.vision.ee.ethz.ch/cvl/datasets/b3dac2.en.html) is available upon request for research or academic purposes and TED Datasets Preparation and Data Pre-process Please follow this [link](https://github.com/Doubiiu/CodeTalker/tree/main/BIWI)
 
 
 
