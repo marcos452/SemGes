@@ -37,12 +37,15 @@ python train.py -c configs/vqvae_body.yaml
 ```
 
 
-### 🏋️‍♂️ Train SemGes（Second Stage）
+### Train SemGes（Second Stage）
 ```commandline
-python train.py -c configs/latent_transformer.yaml
+python train.py -c ./configs/latent_transformer.yaml
 ```
 
-## 🏋️‍♂️ Inference
+## 🤖 Inference
+```commandline
+python test_demo.py -c ./configs/latent_transformer_test.yaml
+```
 
 
 ## 🙏 Acknowledgements
