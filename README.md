@@ -1,10 +1,11 @@
 # SemGes: Semantics-aware Co-Speech Gesture Generation using Semantic Coherence and Relevance Learning[ICCV 2025]
 > 
-> This GitHub repository contains PyTorch implementation of the work presented above. 
-> SemGes generates gesture animations based on raw audio input of speech sequences, text and speaker ID. 
-> We reccomend visiting the project [webpage]( https://semgesture.github.io/.)
-> Paper [arxiv](https://www.arxiv.org/abs/2507.19359) and watching the supplementary video.
+> This official GitHub repository contains PyTorch implementation of the work presented above. 
+> SemGes generates gesture animations based on raw audio input of speech sequences, text and speaker ID.
 
+> We reccomend visiting the project [webpage]( https://semgesture.github.io/.)and watching the supplementary video.
+
+> Paper [arxiv](https://www.arxiv.org/abs/2507.19359) 
 ## ⚙️ Installation
 
 ### Build Environment
