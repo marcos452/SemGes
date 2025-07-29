@@ -5,7 +5,8 @@
 
 > We reccomend visiting the project [webpage]( https://semgesture.github.io/.)and watching the supplementary video.
 
-> Paper [arxiv](https://www.arxiv.org/abs/2507.19359) 
+> Paper [arxiv](https://www.arxiv.org/abs/2507.19359)
+
 ## ⚙️ Installation
 
 ### Build Environment
