@@ -27,13 +27,15 @@ pip install -r requirements.txt
 
 
 
-
-### 🏋️‍♂️ Train VQVAE（First Stage）
+## 🏋️‍♂️ Model Training
+###  Train VQVAE（First Stage）
+```commandline
 python train.py -c configs/vqvae_hand.yaml
 python train.py -c configs/vqvae_body.yaml
-
+```
 
 
 ### 🏋️‍♂️ Train SemGes（Second Stage）
+```commandline
 python train.py -c configs/latent_transformer.yaml
-
+```
