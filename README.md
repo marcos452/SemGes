@@ -18,9 +18,13 @@ conda activate semges
 
 # Step 2: Install Python dependencies
 pip install -r requirements.txt
+```
+
+### Dataset Download
 
 
-## 🧾 Release Plans
+
+
 
 ### 🏋️‍♂️ Train VQVAE（First Stage）
 python train.py -c configs/vqvae_hand.yaml
@@ -30,3 +34,4 @@ python train.py -c configs/vqvae_body.yaml
 
 ### 🏋️‍♂️ Train SemGes（Second Stage）
 python train.py -c configs/latent_transformer.yaml
+
