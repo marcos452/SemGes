@@ -21,9 +21,9 @@ pip install -r requirements.txt
 ## 📁 Dataset Download
 
 
-> [BEAT Datasets](https://data.vision.ee.ethz.ch/cvl/datasets/b3dac2.en.html) is available upon request for research or academic purposes and Beat Data Preparation and Data Pre-process Please follow this [link](https://github.com/Doubiiu/CodeTalker/tree/main/BIWI)
+> [BEAT Datasets](https://pantomatrix.github.io/BEAT-Dataset/) is available upon request for research or academic purposes and Beat Data Preparation and Data Pre-process Please follow this [link](https://github.com/PantoMatrix/PantoMatrix/blob/main/datasets/process_testdata.py)
 
-> [TED Datasets Expressive](https://data.vision.ee.ethz.ch/cvl/datasets/b3dac2.en.html) is available upon request for research or academic purposes and TED Datasets Expressive Preparation and Data Pre-process Please follow this [link](https://github.com/Doubiiu/CodeTalker/tree/main/BIWI)
+> [TED Datasets Expressive](https://mycuhk-my.sharepoint.com/personal/1155165198_link_cuhk_edu_hk/_layouts/15/onedrive.aspx?id=%2Fpersonal%2F1155165198%5Flink%5Fcuhk%5Fedu%5Fhk%2FDocuments%2Fted%5Fexpressive%5Fdataset%2Ezip&parent=%2Fpersonal%2F1155165198%5Flink%5Fcuhk%5Fedu%5Fhk%2FDocuments&ga=1) is available upon request for research or academic purposes and TED Datasets Expressive Preparation and Data Pre-process Please follow this [link](https://github.com/alvinliu0/HA2G?tab=readme-ov-file)
 
 
 
@@ -46,7 +46,7 @@ python train.py -c configs/latent_transformer.yaml
 
 
 ## 🙏 Acknowledgements
-Thanks to SynTalker, EMAGE, DiffuseStyleGesture, our code is partially borrowing from them. Please check these useful repos.
+Thanks to [CAMN](https://pantomatrix.github.io/BEAT/), [EMAGE](https://pantomatrix.github.io/EMAGE/), our code is partially borrowing from them. Please check these useful repos.
 
 
 ## 📖 Citation
