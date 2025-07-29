@@ -7,9 +7,7 @@
 
 > Paper [arxiv](https://www.arxiv.org/abs/2507.19359)
 
-## ⚙️ Installation
-
-### Build Environment
+## ⚙️ Build Environment
 
 ```bash
 # Step 1: Create and activate conda environment
@@ -20,7 +18,7 @@ conda activate semges
 pip install -r requirements.txt
 ```
 
-### Dataset Download
+## Dataset Download
 
 
 #### [BEAT Datasets](https://data.vision.ee.ethz.ch/cvl/datasets/b3dac2.en.html) is available upon request for research or academic purposes and Beat Data Preparation and Data Pre-process Please follow this [link](https://github.com/Doubiiu/CodeTalker/tree/main/BIWI)
