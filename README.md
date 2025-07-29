@@ -23,11 +23,13 @@ pip install -r requirements.txt
 
 > [BEAT Datasets](https://data.vision.ee.ethz.ch/cvl/datasets/b3dac2.en.html) is available upon request for research or academic purposes and Beat Data Preparation and Data Pre-process Please follow this [link](https://github.com/Doubiiu/CodeTalker/tree/main/BIWI)
 
-> [TED Datasets](https://data.vision.ee.ethz.ch/cvl/datasets/b3dac2.en.html) is available upon request for research or academic purposes and TED Datasets Preparation and Data Pre-process Please follow this [link](https://github.com/Doubiiu/CodeTalker/tree/main/BIWI)
+> [TED Datasets Expressive](https://data.vision.ee.ethz.ch/cvl/datasets/b3dac2.en.html) is available upon request for research or academic purposes and TED Datasets Expressive Preparation and Data Pre-process Please follow this [link](https://github.com/Doubiiu/CodeTalker/tree/main/BIWI)
 
 
 
 ## 🏋️‍♂️ Model Training
+
+
 ###  Train VQVAE（First Stage）
 ```commandline
 python train.py -c configs/vqvae_hand.yaml
@@ -39,3 +41,28 @@ python train.py -c configs/vqvae_body.yaml
 ```commandline
 python train.py -c configs/latent_transformer.yaml
 ```
+
+## 🏋️‍♂️ Inference
+
+
+## 🙏 Acknowledgements
+Thanks to SynTalker, EMAGE, DiffuseStyleGesture, our code is partially borrowing from them. Please check these useful repos.
+
+
+## 📖 Citation
+
+If you use this work in your research, please cite the following paper:
+
+```bibtex
+@misc{liu2025semgessemanticsawarecospeechgesture,
+      title={SemGes: Semantics-aware Co-Speech Gesture Generation using Semantic Coherence and Relevance Learning}, 
+      author={Lanmiao Liu and Esam Ghaleb and Aslı Özyürek and Zerrin Yumak},
+      year={2025},
+      eprint={2507.19359},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2507.19359}, 
+}
+
+
+
