@@ -57,14 +57,17 @@ Thanks to [CAMN](https://pantomatrix.github.io/BEAT/), [EMAGE](https://pantomatr
 If you use this work in your research, please cite the following paper:
 
 ```bibtex
-@misc{liu2025semgessemanticsawarecospeechgesture,
-      title={SemGes: Semantics-aware Co-Speech Gesture Generation using Semantic Coherence and Relevance Learning}, 
-      author={Lanmiao Liu and Esam Ghaleb and Aslı Özyürek and Zerrin Yumak},
-      year={2025},
-      eprint={2507.19359},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2507.19359}, 
+@inproceedings{liu2025semges,
+  title     = {SemGes: Semantics-aware Co-Speech Gesture Generation using Semantic Coherence and Relevance Learning},
+  author    = {Lanmiao Liu and Esam Ghaleb and Aslı Özyürek and Zerrin Yumak},
+  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  year      = {2025},
+  month     = oct,
+  address   = {Honolulu, Hawai‘i, USA},
+  publisher = {IEEE},
+  url       = {https://semgesture.github.io/},
+  note      = {To appear},
+  series    = {ICCV '25'}
 }
 
 
