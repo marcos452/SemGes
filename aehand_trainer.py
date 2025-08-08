@@ -114,8 +114,8 @@ class CustomTrainer(train.BaseTrainer):
             bs, n, j = tar_pose.shape[0], tar_pose.shape[1], self.joints
             # tar_exps = torch.zeros((bs, n, 100)).cuda()
             pose_hand = (torch.Tensor(pose_hand.reshape(-1, 3))/180)*np.pi
-            pose_hand = rc.euler_angles_to_matrix(pose_hand.reshape(bs, n-remain, 38, 3),"XYZ")
-            pose_hand = rc.matrix_to_rotation_6d(pose_hand).reshape(bs, n-remain, 38*6)
+            pose_hand = rc.euler_angles_to_matrix(pose_hand.reshape(bs, n, 38, 3),"XYZ")
+            pose_hand = rc.matrix_to_rotation_6d(pose_hand).reshape(bs, n, 38*6)
 
             t_data = time.time() - t_start
             
@@ -197,8 +197,8 @@ class CustomTrainer(train.BaseTrainer):
                 bs, n, j = tar_pose.shape[0], tar_pose.shape[1], self.joints
                 #tar_exps = torch.zeros((bs, n, 100)).cuda()
                 pose_hand = (torch.Tensor(pose_hand.reshape(-1, 3))/180)*np.pi
-                pose_hand = rc.euler_angles_to_matrix(pose_hand.reshape(bs, n-remain, 38, 3),"XYZ")
-                pose_hand = rc.matrix_to_rotation_6d(pose_hand).reshape(bs, n-remain, 38*6)
+                pose_hand = rc.euler_angles_to_matrix(pose_hand.reshape(bs, n, 38, 3),"XYZ")
+                pose_hand = rc.matrix_to_rotation_6d(pose_hand).reshape(bs, n, 38*6)
                 t_data = time.time() - t_start 
 
                 #self.opt.zero_grad()
