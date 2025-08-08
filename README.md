@@ -47,7 +47,6 @@ python train.py -c ./configs/latent_transformer.yaml
 ```commandline
 python test.py -c ./configs/vqvae_test.yaml
 ```
-[![Watch the demo video](assets/thumbnail.png)](https://youtu.be/YourVideoID)
 
 
 ### Evaluation and Visualization（Second Stage）
