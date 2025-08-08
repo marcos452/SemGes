@@ -43,7 +43,7 @@ g_name: VQVAEConvZero_1
 
 #eval_model: motion_autoencoder
 #e_name: HalfEmbeddingNet
-trainer: ae
+trainer: aebody
 decay_epochs: 780
 # audio_f: 256
 # a_pre_encoder: tcn_camn
