@@ -43,6 +43,14 @@ python train.py -c ./configs/latent_transformer.yaml
 ```
 
 ## 🤖 Inference
+### Visualization（First Stage）
+```commandline
+python test.py -c ./configs/vqvae_test.yaml
+```
+[![Watch the demo video](assets/thumbnail.png)](https://youtu.be/YourVideoID)
+
+
+### Evaluation and Visualization（Second Stage）
 ```commandline
 python test_demo.py -c ./configs/latent_transformer_test.yaml
 ```
