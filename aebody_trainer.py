@@ -98,9 +98,12 @@ class CustomTrainer(train.BaseTrainer):
             tar_pose = dict_data["pose"]
             #print("tar_pose:", np.shape(tar_pose))
             tar_pose = (tar_pose*self.std_pose)+self.mean_pose
-            pose_body = torch.zeros((tar_pose.shape[0], tar_pose.shape[1], 114)).cuda()
-            pose_body[:, :, 0:57] = tar_pose[:, :, 18:75]
-            pose_body[:, :, 57:114] =tar_pose[:, :, 84:141]
+            pose_body = torch.zeros((tar_pose.shape[0], tar_pose.shape[1], 27)).cuda()
+            pose_body[:, :, 0:18] = tar_pose[:, :, 0:18]
+            pose_body[:, :, 18:27] =tar_pose[:, :, 75:84]
+            
+
+
 
 
             audio = dict_data["audio"]
@@ -114,8 +117,8 @@ class CustomTrainer(train.BaseTrainer):
             bs, n, j = tar_pose.shape[0], tar_pose.shape[1], self.joints
             # tar_exps = torch.zeros((bs, n, 100)).cuda()
             pose_body = (torch.Tensor(pose_body.reshape(-1, 3))/180)*np.pi
-            pose_body = rc.euler_angles_to_matrix(pose_body.reshape(bs, n, 38, 3),"XYZ")
-            pose_body = rc.matrix_to_rotation_6d(pose_body).reshape(bs, n, 38*6)
+            pose_body = rc.euler_angles_to_matrix(pose_body.reshape(bs, n, 9, 3),"XYZ")
+            pose_body = rc.matrix_to_rotation_6d(pose_body).reshape(bs, n, 9*6)
             t_data = time.time() - t_start
             
             self.opt.zero_grad()
@@ -134,9 +137,9 @@ class CustomTrainer(train.BaseTrainer):
             # g_loss_final += cosine_loss * self.args.cosine_weight
  
 
-            rec_pose = rec_pose.reshape(bs, n, 38, 6)
+            rec_pose = rec_pose.reshape(bs, n, 9, 6)
             rec_pose = rc.rotation_6d_to_matrix(rec_pose)#
-            pose_body = rc.rotation_6d_to_matrix(pose_body.reshape(bs, n, 38, 6))
+            pose_body = rc.rotation_6d_to_matrix(pose_body.reshape(bs, n, 9, 6))
             loss_rec = self.vectices_loss(rec_pose, pose_body) * self.args.rec_weight * self.args.rec_pos_weight
             self.tracker.update_meter("rec_loss", "train", loss_rec.item())
             g_loss_final += loss_rec
@@ -186,16 +189,18 @@ class CustomTrainer(train.BaseTrainer):
                 #audio_feat = self.speechclip(audio)            
                 #tar_beta = dict_data["beta"].cuda()
                 #tar_trans = dict_data["trans"].cuda()
-                pose_body = torch.zeros((tar_pose.shape[0], tar_pose.shape[1], 114)).cuda()
-                pose_body[:, :, 0:57] = tar_pose[:, :, 18:75]
-                pose_body[:, :, 57:114] =tar_pose[:, :, 84:141]
+                pose_body = torch.zeros((tar_pose.shape[0], tar_pose.shape[1], 27)).cuda()
+                pose_body[:, :, 0:18] = tar_pose[:, :, 0:18]
+                pose_body[:, :, 18:27] =tar_pose[:, :, 75:84]
+                
+
                 tar_pose = tar_pose.cuda() 
                 pose_body = pose_body.cuda() 
                 bs, n, j = tar_pose.shape[0], tar_pose.shape[1], self.joints
                 #tar_exps = torch.zeros((bs, n, 100)).cuda()
                 pose_body = (torch.Tensor(pose_body.reshape(-1, 3))/180)*np.pi
-                pose_body = rc.euler_angles_to_matrix(pose_body.reshape(bs, n, 38, 3),"XYZ")
-                pose_body = rc.matrix_to_rotation_6d(pose_body).reshape(bs, n, 38*6)
+                pose_body = rc.euler_angles_to_matrix(pose_body.reshape(bs, n, 9, 3),"XYZ")
+                pose_body = rc.matrix_to_rotation_6d(pose_body).reshape(bs, n, 9*6)
                 t_data = time.time() - t_start 
 
                 #self.opt.zero_grad()
@@ -214,9 +219,9 @@ class CustomTrainer(train.BaseTrainer):
 
 
 
-                rec_pose = rec_pose.reshape(bs, n, 38, 6)
+                rec_pose = rec_pose.reshape(bs, n, 9, 6)
                 rec_pose = rc.rotation_6d_to_matrix(rec_pose)#
-                pose_body = rc.rotation_6d_to_matrix(pose_body.reshape(bs, n, 38, 6))
+                pose_body = rc.rotation_6d_to_matrix(pose_body.reshape(bs, n, 9, 6))
                 
                 loss_rec = self.vectices_loss(rec_pose, pose_body) * self.args.rec_weight * self.args.rec_pos_weight
                 self.tracker.update_meter("rec_loss", "val", loss_rec.item())
