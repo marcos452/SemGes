@@ -21,7 +21,7 @@ pip install -r requirements.txt
 ## 📁 Dataset Download
 
 
-> [BEAT Datasets](https://pantomatrix.github.io/BEAT-Dataset/) is available upon request for research or academic purposes and Beat Data Preparation and Data Pre-process Please follow this [link](https://github.com/PantoMatrix/PantoMatrix/blob/main/datasets/process_testdata.py)
+> [BEAT Datasets](https://pantomatrix.github.io/BEAT-Dataset/) is available upon request for research or academic purposes and Beat Data Preparation and generate the LMDB cache, use the BeatDataset implementation found in dataloaders/beat.py [https://github.com/beat2022dataset/beat/blob/main/dataloaders/beat.py]. When you instantiate this dataset with your raw data directory and specify a cache_root (for example, ./datasets/beat_cache), it will automatically preprocess your data and write the LMDB files on first access. By default, you’ll end up with a directory structure like ./datasets/beat_cache/beat_english_15_141_origin/train.
 
 > [TED Datasets Expressive](https://mycuhk-my.sharepoint.com/personal/1155165198_link_cuhk_edu_hk/_layouts/15/onedrive.aspx?id=%2Fpersonal%2F1155165198%5Flink%5Fcuhk%5Fedu%5Fhk%2FDocuments%2Fted%5Fexpressive%5Fdataset%2Ezip&parent=%2Fpersonal%2F1155165198%5Flink%5Fcuhk%5Fedu%5Fhk%2FDocuments&ga=1) is available upon request for research or academic purposes and TED Datasets Expressive Preparation and Data Pre-process Please follow this [link](https://github.com/alvinliu0/HA2G?tab=readme-ov-file)
 
